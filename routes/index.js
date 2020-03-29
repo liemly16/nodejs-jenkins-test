@@ -7,7 +7,7 @@ router.get('/', function(req, res, next) {
 });
 
 router.get('/version', function(req, res, next) {
-  res.send("1.0.0");
+  res.send("1.0.1");
 });
 
 
