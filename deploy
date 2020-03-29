@@ -1,0 +1,8 @@
+#!/bin/sh
+ssh ubuntu@ec2-13-229-232-132.ap-southeast-1.compute.amazonaws.com <<EOF
+ cd ~/nodejs-jenkins-test
+ git pull
+ npm install — production
+ pm2 reload nodejs-jenkins-test
+ exit
+EOF
