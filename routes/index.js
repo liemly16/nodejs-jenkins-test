@@ -6,4 +6,9 @@ router.get('/', function(req, res, next) {
   res.send("hello world!");
 });
 
+router.get('/version', function(req, res, next) {
+  res.send("1.0.0");
+});
+
+
 module.exports = router;
